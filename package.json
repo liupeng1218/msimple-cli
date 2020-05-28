@@ -1,0 +1,37 @@
+{
+  "name": "msimple-cli",
+  "version": "1.0.0",
+  "description": "A simple scaffold",
+  "main": "index.js",
+  "bin": {
+    "msimple-cli": "./bin/cmd",
+    "ms-cli": "./bin/cmd",
+    "msc": "./bin/cmd"
+  },
+  "scripts": {
+    "compile": "babel src -d dist",
+    "watch": "npm run compile -- --watch"
+  },
+  "keywords": [],
+  "author": "liupeng",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/runtime": "^7.9.2",
+    "@babel/runtime-corejs3": "^7.9.2",
+    "chalk": "^4.0.0",
+    "commander": "^5.0.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.1.0",
+    "log-symbols": "^3.0.0",
+    "ora": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
